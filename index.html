@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Los Tres Amigos</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("salsa.jpg");
+  min-height: 75%;
+}
+
+.menu {
+  display: none;
+}
+</style>
+</head>
+<body>
+
+
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag">Open from 10am to 5pm</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:90px">Los<br>Tres<br>Amigos</span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <span class="w3-text-white"></span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <img src="unnamed3.png" style="display:block; margin:0 auto; width:500px; height:auto;" alt="Logo" class="w3-margin-top">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT US</span></h5>
+    <p>One day Gavin asked Andon and Mack to come together to decide to start a food truck business because they all wanted to become entrepreneurs at something they were all passionate about. They came up with an agreement to start a taco truck business. Cause they all liked tacos and its something people will buy that is liked and also simple.
+    Our Food truck name is Los Loco Tacos, our tacos are meant to satisfy our customers to their liking.
+</p>
+    <p>In addition to our full Taco menu, we serve fresh made-to-order breakfast and lunch, as well as a selection of sides and salads and other good stuff.</p>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i>"To bring people together by serving fresh, authentic street tacos." "To create tacos people crave and spaces where everyone feels like they belong, embracing bold flavors and combinations."</i></p>
+      <p>CMO: Andon, CFO: Mack and Owner: Gavin</p>
+    </div>
+    <img src="corn.jpg" style="display:block; margin:0 auto; max-width:500px" class="w3-margin-top">
+    <p><strong>Running hours:</strong> Monday to Saturday from 10am to 5pm.</p>
+    <p><strong>Address:</strong> LoanDepot Park in Miami, FL.</p>
+  </div>
+</div>
+
+<!-- Menu Container -->
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">THE MENU</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+        <div class="w3-col s6 tablink">Eat</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+        <div class="w3-col s6 tablink">Drink</div>
+      </a>
+    </div>
+
+    <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Street Tacos</h5>
+      <p class="w3-text-grey">Tortilla, taco Meat, cheddar cheese, lettuce, chopped tomatoes, and sour cream  5.99</p><br>
+    
+      <h5>Burritos</h5>
+      <p class="w3-text-grey">Seasoned meat (ground beef, chicken, or steak), rice, beans (black or pinto), cheese, and toppings like guacamole, salsa, or sour cream   10.99</p><br>
+    
+      <h5>Quesadillas</h5>
+      <p class="w3-text-grey">Cooked chicken, beef, sauteed vegetables (onions, peppers), black beans, and corn, served with sides like salsa, guacamole, or sour cream     7.50</p><br>
+    
+      <h5>Tortas</h5>
+      <p class="w3-text-grey">Refried beans, mayonnaise, sliced avocado, tomato, onions, and jalapeños, paired with proteins like carnitas, ham, carne asada, or breaded milanesa 11.99</p><br>
+    
+      <h5>Elote</h5>
+      <p class="w3-text-grey">It includes 3 cobs and grilled corn on the cob slathered in a creamy, tangy mixture of mayonnaise, sour cream (or Mexican crema), and lime juice, then topped with salty Cotija cheese, chili powder, and cilantro 7.99</p>
+    </div>
+
+    <div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Coffee</h5>
+      <p class="w3-text-grey">Regular coffee 2.50</p><br>
+    
+      <h5>Water</h5>
+      <p class="w3-text-grey">Water 1.50</p><br>
+    
+      <h5>Unsweet Tea</h5>
+      <p class="w3-text-grey">Hot tea, but its unsweet 3.00</p><br>
+    
+      <h5>Sweet tea</h5>
+      <p class="w3-text-grey">Hot tea, but its sweet 3.00</p><br>
+    
+      <h5>Soda</h5>
+      <p class="w3-text-grey">Coke, Sprite, Fanta, etc. 2.50</p>
+    </div>  
+    
+  </div>
+</div>
+
+<!-- Contact/Area Container -->
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">WHERE TO FIND US</span></h5>
+    <p>Find us at Mimami, FL.</p>
+    
+    <p><span class="w3-tag">FYI!</span> We offer full-service catering, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p>
+    <p><strong>Reserve</strong> for catering, ask for today's special or just send us a message:</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="How many people" required name="People"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2026-04-24T13:00"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+      <p><button class="w3-button w3-black" type="submit">SEND MESSAGE</button></p>
+    </form>
+  </div>
+</div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>Powered by the help of Michael French</p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
